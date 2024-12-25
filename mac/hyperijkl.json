@@ -1,16 +1,16 @@
 {
   "title": "HyperIJKL",
-  "url": "https://raw.githubusercontent.com/RomanYuldashev/HyperIJKL/main/mac/hyperijkl.json",
+  "url": "https://raw.githubusercontent.com/roijacob/HyperIJKL/main/mac/hyperijkl.json",
   "version": "1.0.0",
   "maintainers": [
-    "RomanYuldashev"
+    "Roi Jacob"
   ],
-  "author": "Roman Yuldashev (RomanYuldashev@proton.me)",
-  "website": "https://github.com/RomanYuldashev/HyperIJKL",
-  "json_url": "https://raw.githubusercontent.com/RomanYuldashev/HyperIJKL/main/mac/hyperijkl.json",
-  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/RomanYuldashev/HyperIJKL/main/mac/hyperijkl.json",
+  "author": "Roi Jacob (roijacob@outlook.com)",
+  "website": "https://github.com/roijacob/HyperIJKL",
+  "json_url": "https://raw.githubusercontent.com/roijacob/HyperIJKL/main/mac/hyperijkl.json",
+  "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/roijacob/HyperIJKL/main/mac/hyperijkl.json",
   "gallery_url": "https://ke-complex-modifications.pqrs.org/#emulation-modes",
-  "repo": "https://github.com/RomanYuldashev/HyperIJKL",
+  "repo": "https://github.com/roijacob/HyperIJKL",
   "rules": [
     {
       "description": "[HyperIJKL] Capslock to Hyper",
@@ -2029,7 +2029,7 @@
             {
               "key_code": "tab",
               "modifiers": [
-                "control",
+                "control",  
                 "shift"
               ]
             }
@@ -2095,7 +2095,7 @@
       "description": "[HyperIJKL] Applications",
       "manipulators": [
         {
-          "description": "e -> Microsoft Outlook",
+          "description": "e -> Arc Browser",
           "type": "basic",
           "conditions": [
             {
@@ -2114,12 +2114,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Microsoft Outlook'"
+              "shell_command": "open -a Arc"
             }
           ]
         },
         {
-          "description": "command + e -> Notes",
+          "description": "command + e -> Define Word (Raycast)",
           "type": "basic",
           "conditions": [
             {
@@ -2141,7 +2141,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a notes"
+              "shell_command": "open raycast://ai-commands/fix-spelling-and-grammar" 
             }
           ]
         },
@@ -2173,7 +2173,7 @@
           ]
         },
         {
-          "description": "r -> Intellij IDEA",
+          "description": "r -> Obsidian",
           "type": "basic",
           "conditions": [
             {
@@ -2192,12 +2192,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Intellij IDEA'"
+              "shell_command": "open -a Obsidian"
             }
           ]
         },
         {
-          "description": "command + r -> Visual Studio Code",
+          "description": "command + r -> Raycast Notes",
           "type": "basic",
           "conditions": [
             {
@@ -2219,7 +2219,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Visual Studio Code'"
+              "shell_command": "open raycast://extensions/raycast/raycast-notes/raycast-notes"
             }
           ]
         },
@@ -2251,7 +2251,7 @@
           ]
         },
         {
-          "description": "t -> iTerm",
+          "description": "t -> Xcode",
           "type": "basic",
           "conditions": [
             {
@@ -2270,7 +2270,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a iterm"
+              "shell_command": "open -a Xcode"
             }
           ]
         },
@@ -2329,7 +2329,7 @@
           ]
         },
         {
-          "description": "d -> Postman",
+          "description": "d -> Spotify",
           "type": "basic",
           "conditions": [
             {
@@ -2348,7 +2348,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a postman"
+              "shell_command": "open -a Spotify"
             }
           ]
         },
@@ -2563,7 +2563,7 @@
           ]
         },
         {
-          "description": "c -> Telegram",
+          "description": "c -> RemNote",
           "type": "basic",
           "conditions": [
             {
@@ -2582,7 +2582,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a telegram"
+              "shell_command": "open -a RemNote"
             }
           ]
         },
@@ -2817,6 +2817,308 @@
           "to": [
             {
               "shell_command": "open -a 'Microsoft Outlook'; open -a 'Intellij IDEA'; open -a 'Google Chrome'; open -a telegram; open -a notes; open -a postman; open -a 'Docker Desktop'; open -a zoom.us; open -a keepassxc"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[HyperIJKL] Raycast",
+      "manipulators": [
+        {
+          "description": "shift + q -> Fix Spelling and Grammar",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open raycast://ai-commands/fix-spelling-and-grammar"
+            }
+          ]
+        },
+        {
+          "description": "shift + a -> Raycast Notes",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open raycast://extensions/raycast/raycast-notes/raycast-notes"
+            }
+          ]
+        },
+        {
+          "description": "shift + u -> Previous Display",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/previous-display"
+            }
+          ]
+        },
+        {
+          "description": "shift + j -> Left Half",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/left-half"
+            }
+          ]
+        },
+        {
+          "description": "shift + m -> Previous Desktop",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/previous-desktop"
+            }
+          ]
+        },
+        {
+          "description": "shift + p -> Next Display",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/next-display"
+            }
+          ]
+        },
+        {
+          "description": "shift + ; -> Right Half",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/right-half"
+            }
+          ]
+        },
+        {
+          "description": "shift + / -> Next Desktop",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/next-desktop"
+            }
+          ]
+        },
+        {
+          "description": "shift + [ -> Maximize",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/maximize"
+            }
+          ]
+        },
+        {
+          "description": "shift + ' -> Almost Maximize",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/almost-maximize"
+            }
+          ]
+        },
+        {
+          "description": "shift + ] -> Toggle Fullscreen",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g raycast://extensions/raycast/window-management/toggle-fullscreen"
             }
           ]
         }
