@@ -1508,6 +1508,159 @@
       "description": "[HyperIJKL] Mouse Navigation",
       "manipulators": [
         {
+          "description": "option + shift + q -> up mouse wheel",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "option",
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "vertical_wheel": -65
+              }
+            }
+          ]
+        },
+        {
+          "description": "option + shift + a -> down mouse wheel",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "option",
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "vertical_wheel": 65
+              }
+            }
+          ]
+        },
+        {
+          "description": "option + shift + w -> mouse double click",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "option",
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 50
+            },
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 50
+            }
+          ]
+        },
+        {
+          "description": "option + shift + s -> left mouse wheel",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "option",
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "horizontal_wheel": 65
+              }
+            }
+          ]
+        },
+        {
+          "description": "option + shift + d -> mouse wheel right",
+          "type": "basic",
+          "conditions": [
+            {
+              "name": "HYPER",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "option",
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "mouse_key": {
+                "horizontal_wheel": -65
+              }
+            }
+          ]
+        },
+        {
           "description": "shift + command + i -> mouse up",
           "type": "basic",
           "conditions": [
@@ -1533,36 +1686,6 @@
             {
               "mouse_key": {
                 "y": -1600
-              }
-            }
-          ]
-        },
-        {
-          "description": "option + shift + i -> mouse wheel up",
-          "type": "basic",
-          "conditions": [
-            {
-              "name": "HYPER",
-              "type": "variable_if",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "option",
-                "shift"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "vertical_wheel": -64
               }
             }
           ]
@@ -1598,36 +1721,6 @@
           ]
         },
         {
-          "description": "option + shift + k -> mouse wheel down",
-          "type": "basic",
-          "conditions": [
-            {
-              "name": "HYPER",
-              "type": "variable_if",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "option",
-                "shift"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "vertical_wheel": 64
-              }
-            }
-          ]
-        },
-        {
           "description": "shift + command + j -> mouse left",
           "type": "basic",
           "conditions": [
@@ -1658,36 +1751,6 @@
           ]
         },
         {
-          "description": "option + shift + j -> mouse wheel left",
-          "type": "basic",
-          "conditions": [
-            {
-              "name": "HYPER",
-              "type": "variable_if",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "option",
-                "shift"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "horizontal_wheel": 64
-              }
-            }
-          ]
-        },
-        {
           "description": "shift + command + l -> mouse right",
           "type": "basic",
           "conditions": [
@@ -1713,36 +1776,6 @@
             {
               "mouse_key": {
                 "x": 1600
-              }
-            }
-          ]
-        },
-        {
-          "description": "option + shift + l -> mouse wheel right",
-          "type": "basic",
-          "conditions": [
-            {
-              "name": "HYPER",
-              "type": "variable_if",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "option",
-                "shift"
-              ],
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "mouse_key": {
-                "horizontal_wheel": -64
               }
             }
           ]
@@ -1801,6 +1834,14 @@
             {
               "pointing_button": "button1"
             }
+            {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 50
+          },
+          {
+              "pointing_button": "button1",
+              "hold_down_milliseconds": 50
+          }
           ]
         },
         {
