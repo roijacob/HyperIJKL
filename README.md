@@ -8,4 +8,4 @@ License: [Apache 2.0 License](LICENSE)
 
 ![](mac/img/png/roijacob-raycast.png)
 
-![](mac/img/png/roijacob-mouse.png)
+![](mac/img/png/hyper-shift.png)

@@ -1,0 +1,462 @@
+[
+  {
+    "backcolor": "#dbdbdb",
+    "name": "Apple Wireless Keyboard",
+    "author": "Alistair Calder",
+    "radii": "6px 6px 12px 12px / 18px 18px 12px 12px",
+    "css": "@import url(http://fonts.googleapis.com/css?family=Varela+Round);\n\n#keyboard-bg { \n    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 4%, rgba(255,255,255,0.3) 6%, rgba(0,0,0,0) 10%), \n                      linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%) !important; \n}\n\n.keylabel {\n    font-family: 'volkswagen_serialregular';\n}\n\n/* Strangely, \"Volkswagen Serial\" doesn't have a tilde character */\n.varela { \n    font-family: 'Varela Round'; \n    display: inline-block; \n    font-size: inherit; \n    text-rendering: auto; \n    -webkit-font-smoothing: antialiased; \n    -moz-osx-font-smoothing: grayscale;\n    transform: translate(0, 0);\n}\n.varela-tilde:after { content: \"\\07e\"; }"
+  },
+  [
+    {
+      "y": 0.75,
+      "t": "#666666",
+      "p": "CHICKLET",
+      "a": 7,
+      "f": 2,
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "esc",
+    {
+      "a": 4,
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF1",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF2",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF3",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF4",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF5",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF6",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF7\n\n\n\n\n\n<i class='fa fa-backward'></i>",
+    {
+      "fa": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF8\n\n\n\n\n\n<i class='fa fa-play'></i><i class='fa fa-pause'></i>",
+    {
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF9\n\n\n\n\n\n<i class='fa fa-forward'></i>",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF10\n\n\n\n\n\n<i class='fa fa-volume-off'></i>",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF11\n\n\n\n\n\n<i class='fa fa-volume-down'></i>",
+    {
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "\n\n\nF12\n\n\n\n\n\n<i class='fa fa-volume-up'></i>",
+    {
+      "a": 7,
+      "fa": [
+        5
+      ],
+      "w": 1.0357,
+      "h": 0.75
+    },
+    "◯"
+  ],
+  [
+    {
+      "y": -0.25,
+      "a": 5,
+      "f": 5
+    },
+    "<i class=\"varela varela-tilde\"></i>\n`",
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    "%\n5",
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    ")\n0",
+    "_\n-",
+    "+\n=",
+    {
+      "a": 4,
+      "f": 2,
+      "w": 1.5
+    },
+    "\n\n\ndelete"
+  ],
+  [
+    {
+      "w": 1.5
+    },
+    "\ntab",
+    {
+      "c": "#9d9cff",
+      "t": "#494949",
+      "f": 5,
+      "fa": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "\n\nQ\n\n\n\n\n\n\n\nLeft Click",
+    "\n\nW\n\n\n\n\n\n\n▲\nPointer",
+    "\n\nE\n\n\n\n\n\n\n\nRight Click",
+    "\n\nR\n\n\n\n\n\n\n▲\nScroll",
+    {
+      "c": "#cccccc",
+      "t": "#666666"
+    },
+    "\n\nT\n\n\n\n\n\n\n\nCalendar",
+    {
+      "a": 7
+    },
+    "Y",
+    {
+      "c": "#d39f89",
+      "t": "#494949",
+      "a": 4
+    },
+    "\n\nU\n\n\n\n\n\n\n\nSel. Prev. Word",
+    {
+      "fa": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        2
+      ]
+    },
+    "\n\nI\n\n\n\n\n\n▲\n\nSelect Up",
+    "\n\nO\n\n\n\n\n\n\n\nSel. Next Word",
+    "\n\nP\n\n\n\n\n\n\n\nSel. Beg. Para",
+    {
+      "c": "#cccccc",
+      "t": "#666666",
+      "a": 5
+    },
+    "{\n[",
+    "}\n]",
+    "|\n\\"
+  ],
+  [
+    {
+      "c": "#494949",
+      "t": "#cccccc",
+      "a": 7,
+      "f": 2,
+      "fa": [
+        9
+      ],
+      "w": 1.75
+    },
+    "✱",
+    {
+      "c": "#9d9cff",
+      "t": "#494949",
+      "a": 4,
+      "f": 5,
+      "fa": [
+        9,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "\n\nA\n\n\n\n\n\n\n◀\nPointer",
+    "\n\nS\n\n\n\n\n\n\n▼\nPointer",
+    "\n\nD\n\n\n\n\n\n\n▶\nPointer",
+    {
+      "n": true
+    },
+    "\n\nF\n\n\n\n\n\n\n▼\nScroll",
+    {
+      "c": "#cccccc",
+      "t": "#666666"
+    },
+    "\n\nG",
+    {
+      "a": 7,
+      "f": 5
+    },
+    "H",
+    {
+      "c": "#d39f89",
+      "t": "#494949",
+      "a": 4,
+      "fa": [
+        9,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        2
+      ],
+      "n": true
+    },
+    "\n\nJ\n\n\n\n\n\n◀\n\nSelect Left",
+    "\n\nK\n\n\n\n\n\n▼\n\nSelect Down",
+    "\n\nL\n\n\n\n\n\n▶\n\nSelect Right",
+    {
+      "fa": [
+        4,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        2
+      ]
+    },
+    ":\n\n;\n\n\n\n\n\n\n\nSel. End Para",
+    {
+      "c": "#cccccc",
+      "t": "#666666",
+      "a": 5,
+      "f": 5
+    },
+    "\"\n'",
+    {
+      "a": 4,
+      "f": 2,
+      "w": 1.75
+    },
+    "\n\n\nreturn"
+  ],
+  [
+    {
+      "c": "#494949",
+      "t": "#cccccc",
+      "w": 2.25
+    },
+    "\nshift",
+    {
+      "c": "#9d9cff",
+      "t": "#494949",
+      "f": 5,
+      "fa": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "\n\nZ\n\n\n\n\n\n\n◀\nScroll",
+    "\n\nX\n\n\n\n\n\n\n\nDouble Click",
+    "\n\nC\n\n\n\n\n\n\n\nTriple Click",
+    "\n\nV\n\n\n\n\n\n\n▶\nScroll",
+    {
+      "c": "#cccccc",
+      "t": "#666666",
+      "a": 7
+    },
+    "B",
+    "N",
+    {
+      "c": "#d39f89",
+      "t": "#494949",
+      "a": 4
+    },
+    "\n\nM\n\n\n\n\n\n\n\nSel. Beg. Line",
+    {
+      "c": "#cccccc",
+      "t": "#666666",
+      "a": 5
+    },
+    "<\n,",
+    ">\n.",
+    {
+      "c": "#d39f89",
+      "t": "#494949",
+      "a": 4,
+      "fa": [
+        4,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    "?\n\n/\n\n\n\n\n\n\n\nSel. End Line",
+    {
+      "c": "#494949",
+      "t": "#cccccc",
+      "f": 2,
+      "w": 2.25
+    },
+    "\n\n\nshift"
+  ],
+  [
+    {
+      "c": "#cccccc",
+      "t": "#666666",
+      "h": 1.111
+    },
+    "\nfn",
+    {
+      "fa": [
+        0,
+        0,
+        4
+      ],
+      "h": 1.111
+    },
+    "\n\n⌃\n\n\n\n\n\n\n\ncontrol",
+    {
+      "h": 1.111
+    },
+    "\n\n⌥\n\n\n\n\n\n\n\noption",
+    {
+      "fa": [
+        0,
+        0,
+        5
+      ],
+      "w": 1.25,
+      "h": 1.111
+    },
+    "\n\n⌘\n\n\n\n\n\n\n\ncommand",
+    {
+      "a": 7,
+      "w": 5,
+      "h": 1.111
+    },
+    "",
+    {
+      "a": 4,
+      "fa": [
+        5
+      ],
+      "w": 1.25,
+      "h": 1.111
+    },
+    "⌘\n\n\n\n\n\n\n\n\n\ncommand",
+    {
+      "fa": [
+        4
+      ],
+      "h": 1.111
+    },
+    "⌥\n\n\n\n\n\n\n\n\n\noption",
+    {
+      "x": 1,
+      "a": 7,
+      "f": 5,
+      "h": 0.611
+    },
+    "↑"
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 11.5,
+      "h": 0.6111
+    },
+    "←",
+    {
+      "h": 0.6111
+    },
+    "↓",
+    {
+      "h": 0.6111
+    },
+    "→"
+  ]
+]
